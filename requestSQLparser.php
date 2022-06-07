@@ -28,7 +28,7 @@ function getSQLParser(){
 return $read;
 }
 function postSQLParser(){
-	foreach ($_GET as $key => $value) {
+	foreach ($_POST as $key => $value) {
 	
 	if(!empty($value)){
 		switch ($key) {
